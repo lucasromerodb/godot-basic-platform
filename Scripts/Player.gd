@@ -13,11 +13,9 @@ func _physics_process(_delta):
 	
 	if Input.is_action_pressed("ui_right"):
 		motion.x = min(motion.x + ACCELERATION, MAX_SPEED)
-		print(motion.x)
 		$Sprite.flip_h = false
 		$Sprite.play("Run")
 	elif Input.is_action_pressed("ui_left"): 
-		print(motion.x)
 		motion.x = max(motion.x - ACCELERATION, -MAX_SPEED)
 		$Sprite.flip_h = true
 		$Sprite.play("Run")

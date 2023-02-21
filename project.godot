@@ -11,12 +11,12 @@ config_version=4
 [application]
 
 config/name="Basic-platform-game"
-run/main_scene="res://Scenes/World.tscn"
+run/main_scene="res://Scenes/StartMenu.tscn"
 
 [display]
 
 window/size/width=640
-window/size/height=360
+window/size/height=480
 window/stretch/mode="2d"
 window/stretch/aspect="expand"
 
@@ -30,5 +30,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+2d/snapping/use_gpu_pixel_snap=true
 environment/default_clear_color=Color( 0.137255, 0.121569, 0.211765, 1 )
 environment/default_environment="res://default_env.tres"
